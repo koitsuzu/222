@@ -1,0 +1,390 @@
+body{
+    margin: 0px auto;
+}
+header{
+    background-color: #8a817C;
+    text-align: center;
+    margin: 0px;
+    padding: 50px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #8a817C, #bfbab5, #514c4a,#3d3a39);
+    animation: hueRotate 10s infinite alternate;
+   
+}
+
+
+.profile{
+    color: #e7e5e0;
+    font-size: 60px;
+    letter-spacing: 10px;  
+    
+}
+
+/* 漸變背景動畫 */
+@keyframes hueRotate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}    
+article{
+    
+    background-color: #645E5B;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url(image/cat2.jpg);
+    background-position: 50% 300px;
+    background-size: 200px 200px;
+    background-repeat:no-repeat;
+    background-attachment:fixed
+}
+
+section{
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    background-color: #f4f3ee;
+    
+}
+img{
+    height: 300px;
+    border-radius: 5px;
+    }
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    
+}
+h3{
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.ig{
+    
+    display: inline;
+}
+.gmail{
+    
+    display: inline;
+}
+.ig a img{
+    width: 7%;
+    height: 15%;
+
+}
+.gmail a img{
+    width: 6%;
+    height: 15%;
+    
+    
+}
+
+.intro1 {
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    background-color: #bfbab5;
+}
+
+.intro_txt{
+    width: 75%;
+    
+    font-size: 20px;
+    text-align: left;
+    padding: 75px;
+    padding-bottom: 5px;
+    background-color:#e7e5e0;
+}
+ 
+.slogon{
+    letter-spacing: 2px;
+    font-weight: bold;    
+
+}   
+.pro{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30px 1fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    background-color: #e7e5e0;
+}
+.pro_img.java{
+    grid-area: 2/3/3/4;
+}
+.pro_img.n2{
+    grid-area: 2/4/3/5;
+}
+
+.pro_title{
+    margin-left: 50px;
+    letter-spacing: 10px;
+}
+ol{
+    width: 200px;
+    font-size: 20px;
+    
+}
+ ol > li {
+    list-style-type: none;
+}
+ 
+.java{
+    height: 300px;
+    border-radius: 5px;
+}
+.java:hover {
+    width: 450px;
+    height:550px;
+} 
+.n2{
+    height: 300px;
+    border-radius: 5px;
+}
+.n2:hover {
+    width: 450px;
+    height:550px;
+} 
+
+/* 進度條 */
+.bar{ 
+    margin: 10px; 
+    width:  8em;
+    border-right-style: solid;
+    border-right-color: #514c4a;
+    
+}
+
+@keyframes bar1{
+    from { border-right-width: 0px; }
+    to { border-right-width: 150px; }
+}
+@keyframes bar2{
+    from { border-right-width: 0px; }
+    to { border-right-width: 170px; }
+}
+@keyframes bar3{
+    from { border-right-width: 0px; }
+    to { border-right-width: 120px; }
+}
+@keyframes bar4{
+    from { border-right-width: 0px; }
+    to { border-right-width: 60px; }
+}
+
+#python{
+    animation: bar1 5s ease-in-out;
+    border-width: 150px;
+}
+#ja{
+    animation: bar2 5s ease;
+    border-width: 170px;
+}
+#jsp{
+    animation: bar3 5s ease;
+    border-width: 120px;
+}
+#html{
+    animation: bar1 5s ease;
+    border-width: 150px;
+}
+#go{
+    animation: bar4 5s ease;
+    border-width: 60px;
+}
+#sql{
+    animation: bar3 5s ease;
+    border-width: 120px;
+}
+
+
+
+
+footer{
+    background-color: #f4f3ee;
+    color: #ddd5d0;
+    margin: 0;
+    height: 50px; 
+    background-image: url(image/cat.jpg);
+    background-size: 0;      
+}
+footer:hover{
+    background-image: url(image/cat.jpg);
+    background-size: contain;
+}
+
+
+footer p{
+    
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    color: #645E5B;
+}
+
+
+   
+    
+   
+/* 頁籤 */
+#tab {
+    width: auto;
+    background: #f4f3ee;
+    border-style: double;
+   
+}
+#tab > ul {
+    
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+#tab > ul > li {
+    list-style-type: none;
+}
+
+/* 頁籤上的文字 */
+#tab > ul > li > a { 
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    float: left;
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+
+/*頁籤div內容*/
+#tab > div {
+    clear: both;
+   /* padding: 0 15px;*/
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin: 0,200px;
+    border-radius: 10px;
+    
+}   
+
+/* 第一筆的底色 */
+span:target ~ #tab > ul li:first-child a {
+    background: #f4f3ee;
+}
+
+span:target ~ #tab > div:first-of-type {
+    visibility: hidden;
+    height: 0;
+    padding: 0 15px;
+}
+
+/*頁籤變換&第一筆*/
+span ~ #tab > ul li:first-child a,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]
+{
+    background: white;
+    border-radius: 5px 5px 0 0;
+}
+
+span ~ #tab > ul li:first-child a::before,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before,
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before {
+    background-color: white;
+    height: 100%;
+}
+
+/*頁籤內容顯示&第一筆*/
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3{
+    visibility: visible;
+    height: auto;
+    background: #fff;
+}
+
+span {
+    display: none;
+}
+
+
+/* 經歷 */
+.array {
+    width: 960px;
+    
+    display: flex;
+}
+
+.array_ctrl {
+    display: flex;
+    justify-content: left;
+}
+
+.ex{
+    padding: 10px;
+}
+
+.ex_img {
+    width: 100%;
+}
+
+.ex_txt{
+    margin: 0px 10px;
+}
+
+.work{
+    display: flex;
+}
+.people {
+    padding: 50px;
+    padding-bottom: 0;
+}
+.uniform{
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.work_txt{
+    padding-left: 50px;
+    padding-right: 50px;   
+    
+}
+/* 興趣 */
+.intresting{
+    display:flex;
+    flex-direction: row;
+    padding-top: 30px;
+    
+}
+ul>li{
+    list-style-type: square;
+}
+.guitar{
+    border-radius: 10%;
+
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 500px;
+}
+
+.pet{
+    border-radius: 50%;
+    padding: 10px;
+}
+.interesting_txt {
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.list{
+    font-size: 20px;
+    
+}
