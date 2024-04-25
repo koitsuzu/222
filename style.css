@@ -32,7 +32,7 @@ article{
     background-color: #645E5B;
     padding-left: 150px;
     padding-right: 150px;
-    background-image: url(image/cat2.jpg);
+    /* background-image: url(image/cat2.jpg); */
     background-position: 50% 300px;
     background-size: 200px 200px;
     background-repeat:no-repeat;
@@ -139,18 +139,18 @@ ol{
     height: 300px;
     border-radius: 5px;
 }
-.java:hover {
+/* .java:hover {
     width: 450px;
     height:550px;
-} 
+}  */
 .n2{
     height: 300px;
     border-radius: 5px;
 }
-.n2:hover {
+/* .n2:hover {
     width: 450px;
     height:550px;
-} 
+}  */
 
 /* 進度條 */
 .bar{ 
@@ -211,11 +211,11 @@ footer{
     color: #ddd5d0;
     margin: 0;
     height: 50px; 
-    background-image: url(image/cat.jpg);
+    /* background-image: url(image/cat.jpg); */
     background-size: 0;      
 }
 footer:hover{
-    background-image: url(image/cat.jpg);
+    /* background-image: url(image/cat.jpg); */
     background-size: contain;
 }
 
@@ -266,7 +266,7 @@ footer p{
    /* padding: 0 15px;*/
     height: 0;
     overflow: hidden;
-    visibility: hidden;
+    /* visibility: hidden; */
     margin: 0,200px;
     border-radius: 10px;
     
@@ -287,8 +287,8 @@ span:target ~ #tab > div:first-of-type {
 span ~ #tab > ul li:first-child a,
 #tab-1:target ~ #tab > ul li a[href$="#tab-1"],
 #tab-2:target ~ #tab > ul li a[href$="#tab-2"],
-#tab-3:target ~ #tab > ul li a[href$="#tab-3"]
-{
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"]{
     background: white;
     border-radius: 5px 5px 0 0;
 }
@@ -296,7 +296,8 @@ span ~ #tab > ul li:first-child a,
 span ~ #tab > ul li:first-child a::before,
 #tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
 #tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before,
-#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before {
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before,
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"]::before{
     background-color: white;
     height: 100%;
 }
@@ -305,7 +306,9 @@ span ~ #tab > ul li:first-child a::before,
 span ~ #tab > div:first-of-type,
 #tab-1:target ~ #tab > div.tab-content-1,
 #tab-2:target ~ #tab > div.tab-content-2,
-#tab-3:target ~ #tab > div.tab-content-3{
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4
+{
     visibility: visible;
     height: auto;
     background: #fff;
@@ -318,17 +321,17 @@ span {
 
 /* 經歷 */
 .array {
-    width: 960px;
-    
+    width: fit-content;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .array_ctrl {
     display: flex;
-    justify-content: left;
 }
 
-.ex{
+.ex {
+    width: 100%;
     padding: 10px;
 }
 
@@ -336,9 +339,11 @@ span {
     width: 100%;
 }
 
-.ex_txt{
+.ex_txt {
     margin: 0px 10px;
+    font-size: 28px;
 }
+
 
 .work{
     display: flex;
@@ -354,7 +359,8 @@ span {
 
 .work_txt{
     padding-left: 50px;
-    padding-right: 50px;   
+    padding-right: 50px; 
+    font-size: 28px;  
     
 }
 /* 興趣 */
@@ -382,6 +388,8 @@ ul>li{
 .interesting_txt {
     padding-left: 20px;
     padding-right: 0px;
+    font-size: 28px;
+
 }
 
 .list{
